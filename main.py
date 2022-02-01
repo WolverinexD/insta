@@ -21,7 +21,7 @@ app = Client(api_token, api_id, api_hash)
 
 @Client.on_message(filters.command("start"))
 async def start(client, m: Message):
-    m.reply_text(chat_id = m.chat_id,text = f"Hello {m.from_user.mention}! \nI'm here to download instagram image apart from private accounts")
+    m.reply_text(chat_id = m.chat_id, text = f"Hello {m.from_user.mention}! \nI'm here to download instagram image apart from private accounts")
     m.reply_text(chat_id = m.chat_id, text = "Send me only instagram image link")
 
 @Client.on_message(filters.text & ~filters.edited)
