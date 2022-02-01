@@ -1,0 +1,38 @@
+{
+    "name": "Insta Bot",
+    "description": "Telegram Bot for Downloading Insta Pics",
+    "logo": "https://telegra.ph/file/e09ce38b1fe66f21d3787.jpg",
+    "keywords": [
+        "Telegram",
+        "download",
+        "instagram"
+    ],
+    "repository": "https://github.com/WolverinexD/insta",
+    "env": {
+        "TOKEN": {
+            "description": "Telegram Bot Token",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Your api id from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your api hash from my.telegram.org/apps",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
