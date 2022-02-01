@@ -53,7 +53,7 @@ async def dl(client, m: Message):
 
 
 @Client.on_message(filters.sticker)
-async def dl(client, m: Message):
+async def onlytxt(client, m: Message):
     m.reply_text("Only texts allowed !")
     
 if __name__ == "__main__":
